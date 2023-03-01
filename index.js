@@ -7,7 +7,7 @@ var PORT = process.env.PORT || 3000;
 app.use(express.static(path.join(__dirname, 'public')))
    
 app.get('/', function (req, res, next) {
-    res.render('home.ejs');
+    res.send('<p>Hi!</p>);
 })
  
 app.listen(PORT, function(err){
